@@ -68,7 +68,7 @@ Isso é o suficiente para fazer a **instalação** em seu Replit.
 ---
 ### Como usar
 
-Após **instalar** este repositório em seu **ambiente de programação**, você terá um novo comando chamado `boca`. Não hesite, experimente digitiar em seu terminal `boca` e apertar `enter`. Se tudo ocorreu bem na instalação, voce receberá algo assim:
+Após **instalar** este repositório em seu **ambiente de programação**, você terá um novo comando chamado `boca`. Não hesite, experimente digitar em seu terminal `boca` e apertar `enter`. Se tudo ocorreu bem na instalação, voce receberá algo assim:
 ```
 Uso:
   boca [opções] <arquivo>     Compile, execute e verifique os casos de testes
