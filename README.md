@@ -11,12 +11,25 @@
 ```
 ### Conteúdo
 
-- [Motivo](Motivo)
+- [Motivo](#motivo)
 - [Instalação]()
   - [Linux]()
   - [Replit]()
 - [Como usar]()
+- [Importante]()
 - [Autor]()
 - [Licença]()
 
+<a name="motivo"></a>
+
 ### Motivo
+
+### Instalação
+
+### Como usar
+
+### Importante
+
+### Autor
+
+### Licença
