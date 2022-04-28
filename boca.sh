@@ -3,7 +3,7 @@
 #################################################################################
 #Script Name	: boca
 #Description	: Compile, run and verify test cases from boca exercises
-#Usage          : boca <file> [options]
+#Usage          : boca [options] <file>
 #Options        : Options to pass to the compiler (e.g. -lm to link math library)
 #Author       	: Luiz Felipe Machado
 #################################################################################
@@ -20,10 +20,10 @@ output_default='./output'
 my_output_default='./myOutput'
 
 usage() {
-    echo 'Usage:'
-    echo '  boca [options] <file>     Compile, execute e verifique os casos de testes'
+    echo 'Uso:'
+    echo '  boca [opções] <arquivo>     Compile, execute e verifique os casos de testes'
     echo
-    echo 'Options:'
+    echo 'Opções:'
     echo '  -c          Passe argumentos para o compilador gcc (Por exemplo, -c -lm para linkar a biblioteca <math.h>)'
     echo '  -n          Diretório de entrada para seu programa (Padrão: ./input)'
     echo '  -u          Diretório de saída para seu programa (Padrão: ./output)'
