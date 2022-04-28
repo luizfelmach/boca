@@ -8,22 +8,37 @@
 #Author       	: Luiz Felipe Machado
 #################################################################################
 
-prog=$1
+set -e
+
+if [ $# -gt 0 ]; then
+    prog=${@: -1}
+fi
 output_prog=${prog/.c/''}
-shift
 options=''
 input_default='./input'
 output_default='./output'
 my_output_default='./myOutput'
 
+usage() {
+    echo 'Usage:'
+    echo '  boca <file> [options]     Compile, execute e verifique os casos de testes'
+    echo
+    echo 'Options:'
+    echo '  -c          Passe argumentos para o compilador gcc (Por exemplo, -c -lm para linkar a biblioteca <math.h>)'
+    echo '  -n          Diretório de entrada para seu programa (Padrão: ./input)'
+    echo '  -u          Diretório de saída para seu programa (Padrão: ./output)'
+    echo '  -m          Diretório de saída gerado (Padrão: ./myOutput)'
+    echo '  -d          Limpe os arquivos gerados pelo programa'
+    echo '  -h          Ajuda'
+}
 
 compile() {
     gcc -o ${output_prog} ${options} ${prog}
 }
 
 clean() {
-    rm $output_prog
-    rm -r $my_output_default
+    rm -rf $output_prog
+    rm -rf $my_output_default
 }
 
 generate() {
@@ -38,21 +53,32 @@ compare() {
     diff $output_default $my_output_default
 }
 
-while getopts c:n:u:m: flag
+run() {
+    compile
+    generate
+    compare
+}
+
+while getopts c:n:u:m:hd flag
 do
     case "${flag}" in
         c) options=${OPTARG};;
         n) input_default=${OPTARG};;
         u) output_default=${OPTARG};;
         m) my_output_default=${OPTARG};;
+        d) clean
+            exit 0;;
+        h|*) usage
+            exit 0;;
     esac
 done
 
 if test ! -f $prog; then
     echo 'Arquivo não encontrado!'
     exit 1
+elif [[ -z $prog ]]; then
+    usage
+else
+    run
 fi
 
-compile
-generate
-compare
