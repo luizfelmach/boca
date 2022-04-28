@@ -21,6 +21,7 @@
   - [Replit](#replit)
 - [Como usar](#como-usar)
 - [Importante](#importante)
+- [Desinstalação](#desinstalacao)
 - [Autor](#autor)
 - [Licença](#licenca)
 
@@ -34,6 +35,34 @@ Apesar do linux dispor diversas ferramentas para facilitar nossa vida em produti
 
 ### Instalação
 
+<a name="linux"></a>
+
+##### Linux
+
+Para instalar, **rode** os comandos abaixo:
+
+```
+git clone https://github.com/luizfelmach/boca
+cd boca
+chmod +x install.sh
+./install.sh
+```
+Isso irá **clonar** este repositório e fazer a **instalação** em seu linux.
+
+<a name="replit"></a>
+
+##### Replit
+
+Para instalar no Replit, **crie** um projeto em C e **rode** os comandos abaixo:
+```
+cd $HOME
+git clone https://github.com/luizfelmach/boca
+cd boca
+chmod +x install.sh
+./install.sh
+```
+Isso é o suficiente para fazer a **instalação** em seu Replit.
+
 <a name="como-usar"></a>
 
 ### Como usar
@@ -41,6 +70,10 @@ Apesar do linux dispor diversas ferramentas para facilitar nossa vida em produti
 <a name="importante"></a>
 
 ### Importante
+
+<a name="desinstalacao"></a>
+
+### Desinstalação
 
 <a name="autor"></a>
 
