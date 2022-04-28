@@ -21,7 +21,7 @@ my_output_default='./myOutput'
 
 usage() {
     echo 'Usage:'
-    echo '  boca <file> [options]     Compile, execute e verifique os casos de testes'
+    echo '  boca [options] <file>     Compile, execute e verifique os casos de testes'
     echo
     echo 'Options:'
     echo '  -c          Passe argumentos para o compilador gcc (Por exemplo, -c -lm para linkar a biblioteca <math.h>)'
