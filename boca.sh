@@ -48,6 +48,11 @@ do
     esac
 done
 
+if test ! -f $prog; then
+    echo 'Arquivo não encontrado!'
+    exit 1
+fi
+
 compile
 generate
 compare
