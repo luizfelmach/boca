@@ -21,7 +21,6 @@
   - [Linux](#linux)
   - [Replit](#replit)
 - [Como usar](#como-usar)
-- [Importante](#importante)
 - [Desinstalação](#desinstalacao)
 - [Autor](#autor)
 - [Licença](#licenca)
@@ -89,10 +88,6 @@ Isso irá procurá, por **padrão**, no seu diretório **atual**, uma pasta cham
 Se tudo estiver correto, voce não deve esperar **nenhuma saída**, porém caso sua saída não esteja correta, o boca irá retornar as **diferenças** nas saídas.
 
 Caso queira **mudar** a pasta de input e output, consute `boca -h`.
-
-<a name="importante"></a>
----
-### Importante
 
 <a name="desinstalacao"></a>
 ---
